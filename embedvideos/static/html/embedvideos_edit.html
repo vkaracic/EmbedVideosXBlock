@@ -1,0 +1,242 @@
+<div class="wrapper-comp-settings is-active editor-with-buttons" id="settings-tab">
+    <div id="tabs">
+        <p class="tab-header">Choose a video provider: </p>
+        <ul class="providers-list">
+            <li>
+                <a href="#tabs-1"><img class="selected" src="/c4x/edX/DemoX/asset/youtube.png"></a>
+            </li>
+            <li>
+                <a href="#tabs-2"><img src="/c4x/edX/DemoX/asset/vimeo.png"></a>
+            </li>
+        </ul>
+        <div id="tabs-1">
+            <ul class="list-input settings-list">
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_id">YouTube video ID:</label>
+                        <input class="input setting-input" name="youtube_id" placeholder="YouTube video link" type="text" value="{{youtube_id}}" />
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_width">Video width:</label>
+                        <input class="input setting-input" name="youtube_width" placeholder="Video width" type="text" value="{{youtube_width}}" />
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_height">Video height:</label>
+                        <input class="input setting-input" name="youtube_height" placeholder="Video height" type="text" value="{{youtube_height}}" />
+                    </div>
+                </li>
+                <!--    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+          <label class="label setting-label" for="youtube_autoplay">Autoplay</label>
+          <input class="input setting-input" name="youtube_autoplay" placeholder="Video autoplay" type="text" value="{{youtube_autoplay}}"/>
+      </div>
+    </li>
+-->
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_autohide">Autohide video controls:</label>
+                        <select id="youtube_autohide" class="setting-input">
+                            <option value="2">hide on 4:3 aspect ratio (default)</option>
+                            <option value="1">display or hide automatically</option>
+                            <option value="0">controls always visible</option>
+                        </select>
+                    </div>
+                </li>
+                <!--    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+          <label class="label setting-label" for="youtube_cc_load_policy">Video Closed Captions:</label>
+          <input class="input setting-input" name="youtube_cc_load_policy" placeholder="Video cc_load_policy" type="text" value="{{youtube_cc_load_policy}}"/>
+      </div>
+    </li>
+-->
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_color">Progress bar color:</label>
+                        <select id="youtube_color" class="setting-input">
+                            <option value="red">red</option>
+                            <option value="white">white</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_controls">Controls:</label>
+                        <select id="youtube_controls" class="setting-input">
+                            <option value="1">load immediately</option>
+                            <option value="2">load after user initiates video playback</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_fs">Fullscreen:</label>
+                        <select id="youtube_fs" class="setting-input">
+                            <option value="1">show fullscreen button</option>
+                            <option value="0">hide fullscreen button</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_hl">Video inteface language:</label>
+                        <select id="youtube_hl" class="setting-input">
+                            <option value="en">English</option>
+                            <option value="fr">French</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_iv_load_policy">Annotations:</label>
+                        <select id="youtube_iv_load_policy" class="setting-input">
+                            <option value="1">show annotations</option>
+                            <option value="3">hide annotations</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_loop">Video loop:</label>
+                        <select id="youtube_loop" class="setting-input">
+                            <option value="0">disabled</option>
+                            <option value="1">enabled</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_modestbranding">Video modest branding:</label>
+                        <select id="youtube_modestbranding" class="setting-input">
+                            <option value="0">disabled</option>
+                            <option value="1">enabled</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_rel">Related videos:</label>
+                        <select id="youtube_rel" class="setting-input">
+                            <option value="0">hide</option>
+                            <option value="1">show</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_showinfo">Video information:</label>
+                        <select id="youtube_showinfo" class="setting-input">
+                            <option value="0">hide</option>
+                            <option value="1">show</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="youtube_theme">Video theme:</label>
+                        <select id="youtube_theme" class="setting-input">
+                            <option value="dark">dark</option>
+                            <option value="light">light</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="tabs-2">
+            <ul class="list-input settings-list">
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_id">Vimeo video ID:</label>
+                        <input class="input setting-input" name="vimeo_id" placeholder="Video ID" type="text" value="{{vimeo_id}}" />
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_width">Video width:</label>
+                        <input class="input setting-input" name="vimeo_width" placeholder="Video ID" type="text" value="{{vimeo_width}}" />
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_height">Video height:</label>
+                        <input class="input setting-input" name="vimeo_height" placeholder="Video height" type="text" value="{{vimeo_height}}" />
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_autoplay">Autoplay video controls:</label>
+                        <select id="vimeo_autoplay" class="setting-input">
+                            <option value="0">disable</option>
+                            <option value="1">enable</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_badge">Badge adge:</label>
+                        <select id="vimeo_badge" class="setting-input">
+                            <option value="0">hide</option>
+                            <option value="1">show</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_byline">User's byline:</label>
+                        <select id="vimeo_byline" class="setting-input">
+                            <option value="0">hide</option>
+                            <option value="1">show</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_color">Color of video controls:</label>
+                        <input class="input setting-input" name="vimeo_color" placeholder="Video color" type="text" value="{{vimeo_color}}" />
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_loop">Video loop:</label>
+                        <select id="vimeo_loop" class="setting-input">
+                            <option value="0">disable</option>
+                            <option value="1">enable</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_portrait">User's portrait:</label>
+                        <select id="vimeo_portrait" class="setting-input">
+                            <option value="0">hide</option>
+                            <option value="1">show</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="field comp-setting-entry is-set">
+                    <div class="wrapper-comp-setting">
+                        <label class="label setting-label" for="vimeo_title">Video title:</label>
+                        <select id="vimeo_title" class="setting-input">
+                            <option value="0">hide</option>
+                            <option value="1">show</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="xblock-actions">
+    <ul>
+        <li class="action-item">
+            <a href="#" class="button action-primary save-button">Save</a>
+        </li>
+        <li class="action-item">
+            <a href="#" class="button cancel-button">Cancel</a>
+        </li>
+    </ul>
+</div>
+</div>

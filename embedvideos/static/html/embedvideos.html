@@ -1,0 +1,10 @@
+<div class="embedvideos_block">
+    {% if vimeo_id %}
+    <iframe src="//player.vimeo.com/video/{{vimeo_id}}?portrait={{vimeo_potrait}}&color={{vimeo_color}}" width="{{vimeo_width}}" height="{{vimeo_height}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% endif %} 
+    
+    {% if youtube_id %}
+    <iframe width="{{youtube_width}}" height="{{youtube_height}}" src="http://www.youtube.com/embed/{{youtube_id}}?color={{youtube_color}}&amp;controls={{youtube_controls}}&amp;fs={{youtube_fs}}&amp;hl={{youtube_hl}}&amp;fs={{youtube_fs}}&amp;iv_load_policy={{youtube_iv_load_policy}}&amp;loop={{youtube_loop}}&amp;modestbranding={{youtube_modestbranding}}&amp;rel={{youtube_rel}}&amp;showinfo={{youtube_showinfo}}&amp;theme={{youtube_theme}}">
+    </iframe>
+    {% endif %}
+</div>
