@@ -1,7 +1,7 @@
 function EmbedVideosEditXBlock(runtime, element) {
     /* Tabs functionality */
     $(function() {
-        $("#tabs").tabs();
+        $('#tabs').tabs();
     });
 
     /* Selecting functionality on providers images */
@@ -22,7 +22,7 @@ function EmbedVideosEditXBlock(runtime, element) {
             'vimeo_width',
             'vimeo_height',
             'vimeo_color'
-        ]
+        ];
 
         /* List of attributes that are selections */
         var attrListSelect = [
@@ -43,9 +43,9 @@ function EmbedVideosEditXBlock(runtime, element) {
             'vimeo_loop',
             'vimeo_portrait',
             'vimeo_title'
-        ]
+        ];
 
-        var data = {}
+        var data = {};
 
         /* Save values from inputs to the data dict */
         attrList.forEach(function(item) {
@@ -53,7 +53,7 @@ function EmbedVideosEditXBlock(runtime, element) {
             /* If the user leaves blank would cause errors in Django,
                this way they are left to the default values 
             */
-            if (value != "None") {
+            if (value != 'None') {
                 data[item] = value;
             }
         });
