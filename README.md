@@ -15,5 +15,10 @@ Output looks like this:
 
 ![EmbedVideosXBlock](embedvideosxblock.png)
 
+TODO:
+- preserve selected values on edit
+- include color picker for Vimeo player color parameter
+- add DailyMotion provider
+
 ---
 contact: vkaracic@extensionengine.com
